@@ -1,5 +1,5 @@
 # DMOJ Solutions
-____
+
 This is a repository for all of my current DMOJ problem solutions to date, under the username
 *saleemShady*. Information on each problem and the corresponding problem name for each
 numbered file name can be found in the "info.json" file. As for files uploaded after July 30, 2021, their
