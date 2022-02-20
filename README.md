@@ -21,7 +21,7 @@ name at the end of the url for the link to that problem in DMOJ
 (e.g. *CCC '15 S4 - Convex Hull* would have the 
 URL: https://dmoj.ca/problem/ccc15s4, in which the problem name would
 be found after the last '/', making it *ccc15s4*). Look for the file
-name corresponding to this problem name in the repository.
+name corresponding to this problem name in [Solutions](\Solutions).
 
 ### File Renaming Scripts
 Submission data exported from DMOJ tends to have submission file
