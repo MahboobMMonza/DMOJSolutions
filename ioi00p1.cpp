@@ -61,17 +61,15 @@ inline ll pLogPow(ll x, ll y, ll m = 9223372036854775783) { return logPow(x, y %
 int main() {
     int n;
     cin >> n;
-    string s, sr;
+    string s;
     cin >> s;
-    sr = s;
-    reverse(sr.begin(), sr.end());
     vector<vector<int>> dp(2, vector<int>(n + 1));
     for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= n; j++) {
-            if (s[i - 1] == sr[j - 1]) {
-                dp[i & 1][j] = dp[(i - 1) & 1][j - 1] + 1;
+        for (int j = 0; j < n; j++) {
+            if (s[i - 1] == s[n - j - 1]) {
+                dp[i & 1][j + 1] = dp[(i - 1) & 1][j] + 1;
             } else {
-                dp[i & 1][j] = max(dp[(i - 1) & 1][j], dp[i & 1][j - 1]);
+                dp[i & 1][j + 1] = max(dp[(i - 1) & 1][j + 1], dp[i & 1][j]);
             }
         }
     }
